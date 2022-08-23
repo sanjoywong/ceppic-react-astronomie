@@ -1,4 +1,4 @@
-# Blog d'astronomie avec React JS pour le fontend et Firebase pour le backend
+# Blog d'astronomie avec React JS pour le frontend et Firebase pour le backend
 
 Le but de ce blog est de creer des articles et de les lister,le contenu des articles a pour theme l'astronomie.
 
