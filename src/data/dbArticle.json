@@ -1,0 +1,15 @@
+{
+    "article": [
+      {
+        "titre": "test1",
+        "article": "afasfsafdasfdasdf",
+        "id": 1
+      },
+      {
+        "titre": "test2",
+        "article": "fffffffffffffffffffff",
+        "id": 2
+      }
+  
+    ]
+  }
