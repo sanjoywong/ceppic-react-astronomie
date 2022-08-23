@@ -14,4 +14,4 @@ Le but de ce blog est de creer des articles et de les lister,le contenu des arti
 8. Utiliser **git** et **github** (ou autre **gitlab** etc ...) afin de versionner votre code .
 9. Travailler sur une branche **developp** ainsi que des branches **feature/xxx** en effectuant des **PR(pull request)**.
 10. Faite des **commits atomiques**.
-
+11. Travailler le visuel de votre application (**style csss**)
