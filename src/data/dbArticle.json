@@ -3,11 +3,13 @@
       {
         "titre": "test1",
         "article": "afasfsafdasfdasdf",
+        "date":"2020",
         "id": 1
       },
       {
         "titre": "test2",
         "article": "fffffffffffffffffffff",
+        "date":"2019",
         "id": 2
       }
   
