@@ -3,13 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import Header from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App />
+    <Header title="React JS"
+        texte="librairie javascript fonde par Facebook"/>
+         <Routes>
+         <Route index element={<Acceill />}/>
+        <Route path="article" element={<Article />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="listeContacts" element={<ListeMessage />}/>
+        <Route path="*" element={<NotFound1/>}/>
+    </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
