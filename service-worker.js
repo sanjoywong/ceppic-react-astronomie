@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sanjoywong/ceppic-react-astronomie/precache-manifest.51107ae673d35e1a07c785d05d7a0db2.js"
+  "/ceppic-react-astronomie/precache-manifest.03d2267cb9b1a5ca78d1066bf38fb45f.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/sanjoywong/ceppic-react-astronomie/index.html", {
+workbox.routing.registerNavigationRoute("/ceppic-react-astronomie/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

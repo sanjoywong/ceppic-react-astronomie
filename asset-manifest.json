@@ -1,15 +1,15 @@
 {
-  "main.css": "/sanjoywong/ceppic-react-astronomie/static/css/main.983875ca.chunk.css",
-  "main.js": "/sanjoywong/ceppic-react-astronomie/static/js/main.1245b4fe.chunk.js",
-  "main.js.map": "/sanjoywong/ceppic-react-astronomie/static/js/main.1245b4fe.chunk.js.map",
-  "static/js/1.a322975c.chunk.js": "/sanjoywong/ceppic-react-astronomie/static/js/1.a322975c.chunk.js",
-  "static/js/1.a322975c.chunk.js.map": "/sanjoywong/ceppic-react-astronomie/static/js/1.a322975c.chunk.js.map",
-  "static/js/2.86de7074.chunk.js": "/sanjoywong/ceppic-react-astronomie/static/js/2.86de7074.chunk.js",
-  "static/js/2.86de7074.chunk.js.map": "/sanjoywong/ceppic-react-astronomie/static/js/2.86de7074.chunk.js.map",
-  "runtime~main.js": "/sanjoywong/ceppic-react-astronomie/static/js/runtime~main.1cf081b4.js",
-  "runtime~main.js.map": "/sanjoywong/ceppic-react-astronomie/static/js/runtime~main.1cf081b4.js.map",
-  "static/css/main.983875ca.chunk.css.map": "/sanjoywong/ceppic-react-astronomie/static/css/main.983875ca.chunk.css.map",
-  "index.html": "/sanjoywong/ceppic-react-astronomie/index.html",
-  "precache-manifest.51107ae673d35e1a07c785d05d7a0db2.js": "/sanjoywong/ceppic-react-astronomie/precache-manifest.51107ae673d35e1a07c785d05d7a0db2.js",
-  "service-worker.js": "/sanjoywong/ceppic-react-astronomie/service-worker.js"
+  "main.css": "/ceppic-react-astronomie/static/css/main.983875ca.chunk.css",
+  "main.js": "/ceppic-react-astronomie/static/js/main.a0ae9994.chunk.js",
+  "main.js.map": "/ceppic-react-astronomie/static/js/main.a0ae9994.chunk.js.map",
+  "static/js/1.a322975c.chunk.js": "/ceppic-react-astronomie/static/js/1.a322975c.chunk.js",
+  "static/js/1.a322975c.chunk.js.map": "/ceppic-react-astronomie/static/js/1.a322975c.chunk.js.map",
+  "static/js/2.809e7538.chunk.js": "/ceppic-react-astronomie/static/js/2.809e7538.chunk.js",
+  "static/js/2.809e7538.chunk.js.map": "/ceppic-react-astronomie/static/js/2.809e7538.chunk.js.map",
+  "runtime~main.js": "/ceppic-react-astronomie/static/js/runtime~main.574e5261.js",
+  "runtime~main.js.map": "/ceppic-react-astronomie/static/js/runtime~main.574e5261.js.map",
+  "static/css/main.983875ca.chunk.css.map": "/ceppic-react-astronomie/static/css/main.983875ca.chunk.css.map",
+  "index.html": "/ceppic-react-astronomie/index.html",
+  "precache-manifest.03d2267cb9b1a5ca78d1066bf38fb45f.js": "/ceppic-react-astronomie/precache-manifest.03d2267cb9b1a5ca78d1066bf38fb45f.js",
+  "service-worker.js": "/ceppic-react-astronomie/service-worker.js"
 }
