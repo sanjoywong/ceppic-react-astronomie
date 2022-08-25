@@ -1,34 +1,36 @@
+import { db } from "../firebase";
+import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 import React from "react";
-import articles from "../data/dbArticle.json";
-export default function Article() {
+import { useEffect, useState } from "react";
+import "./Article.css"
+export default function Articles() {
+  const [articles, setArticles] = useState([]);
 
-    function JsonSort(json,key){
-        //console.log(json);
-        for(var j=1,jl=json.length;j < jl;j++){
-            var temp = json[j],
-                val  = temp[key],
-                i    = j-1;
-            while(i >=0 && json[i][key]>val){
-                json[i+1] = json[i];
-                i = i-1;    
-            }
-            json[i+1] = temp;
-            
-        }
-        //console.log(json);
-        return json;
-    }
-    var articlesNew = JsonSort(articles,'date');
-
-    return(<>
-        <h1>Liste les articles</h1>
-        {articlesNew.article.map((articlesNew)=>
-            (<li key={articlesNew.id}>
-            <div>{articlesNew.titre}</div>
-            <div>{articlesNew.article}</div>
-            </li>))
-
-        }
-        </>
+  useEffect(() => {
+    const articlesRef = query(
+      collection(db, "articles"),
+      orderBy("created", "desc")
     );
-};
+    onSnapshot(articlesRef, (snapshot) => {
+      setArticles(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+  }, []);
+
+  return (
+    <>
+      <section className="listeArticles">
+        {articles.map((article) => (
+          <div key={article.id} className="article">
+            <h3>{article.data.titre}</h3>
+            <p>{article.data.article}</p>
+          </div>
+        ))}
+      </section>
+    </>
+  );
+}

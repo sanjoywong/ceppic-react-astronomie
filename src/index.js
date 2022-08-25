@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Acceill from './pages/Acceill';
+import Article from './pages/Article';
+import Apropos from './pages/Apropos';
+import AjouteArtcle from './pages/AjouteArtcle';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,10 +20,11 @@ root.render(
          <Routes>
          <Route index element={<Acceill />}/>
         <Route path="article" element={<Article />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="listeContacts" element={<ListeMessage />}/>
-        <Route path="*" element={<NotFound1/>}/>
+        <Route path="ajouteArticle" element={<AjouteArtcle />} />
+        <Route path="apropos" element={<Apropos />}/>
+        
     </Routes>
+    <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );

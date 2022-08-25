@@ -1,11 +1,13 @@
 import "./Nav.css";
-import {Link,Outlet} from "react-route-dom";
+import React from "react";
+
+import { Link } from "react-router-dom";
 export default function Nav(){
     return(
         <>
-        <nav classname="nav">
+        <nav className="nav">
         <Link to="/article">Article</Link>
-        <Link to="/ajouteArticle">Ajoute Article</Linke>
+        <Link to="/ajouteArticle">Ajoute Article</Link>
         <Link to="/propros">A propros</Link>
         </nav>
         </>
