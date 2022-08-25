@@ -16,12 +16,15 @@
     "react-scripts": "^2.1.3",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://github.com/sanjoywong/ceppic-react-astronomie",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "article-server": "npx json-server --watch ./src/data/dbArticle.json --port 4000"
+    "article-server": "npx json-server --watch ./src/data/dbArticle.json --port 4000",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

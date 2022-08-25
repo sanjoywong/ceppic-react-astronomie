@@ -1,4 +1,10 @@
-.article{
-
-    text-align: center;
+.listeArticles {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.article {
+  border: solid 1px #ddd;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
 }
