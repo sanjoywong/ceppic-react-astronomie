@@ -1,22 +1,23 @@
-import axios from "axios";
 import React from "react";
 import {db} from "../firebase";
 import { collection,addDoc,Timestamp } from "firebase/firestore";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 export default function AjouteArtcle() {
   const [titre, setTitre] = useState();
   const [article, setArticle] = useState();
   const [submitted, setSubmitted] = useState(false);
-  const CurrentYear = () => {
+  let navigate = useNavigate();
+ /*  const CurrentYear = () => {
     return new Date().getFullYear();
   };
-  const mdate = CurrentYear();
+  const mdate = CurrentYear(); */
   //console.log(message);
 
-  const handleSubmit = async(e=>{
+  const handleSubmit = async(e)=>{
     e.preventDefault();
     try {
-      await addDoc(collection(db,articles),{
+      await addDoc(collection(db,"articles"),{
         titre:titre,
         article:article,
         created :Timestamp.now(),
@@ -25,7 +26,7 @@ export default function AjouteArtcle() {
     } catch (error) {
       console.log(error);
     }
-  })
+  };
 
   /* 
   const handleSubmit = (event) => {
@@ -44,13 +45,15 @@ export default function AjouteArtcle() {
       });
   }; */
 
-  if (submitted) {
+  submitted && navigate("/article") ;
+
+ /*  if (submitted) {
     return (
       <>
         <p>Merci pour votre article!</p>
       </>
     );
-  }
+  } */
 
   return (
     <div className="article">
