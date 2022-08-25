@@ -1,5 +1,6 @@
 import React from "react";
 import articles from "../data/dbArticle.json";
+import "./Article.css";
 export default function Article() {
 
     function JsonSort(json,key){
@@ -21,6 +22,7 @@ export default function Article() {
     var articlesNew = JsonSort(articles,'date');
 
     return(<>
+        <div className="article">
         <h1>Liste les articles</h1>
         {articlesNew.article.map((articlesNew)=>
             (<li key={articlesNew.id}>
@@ -29,6 +31,7 @@ export default function Article() {
             </li>))
 
         }
+        </div>
         </>
     );
 };

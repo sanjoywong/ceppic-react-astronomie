@@ -4,7 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey:"REACT_APP_APIKEY",
+  apiKey:process.env.REACT_APP_APIKEY,
   authDomain: "ceppic-react-astronomie-1a21f.firebaseapp.com",
   projectId: "ceppic-react-astronomie-1a21f",
   storageBucket: "ceppic-react-astronomie-1a21f.appspot.com",

@@ -1,5 +1,7 @@
 import axios from "axios";
 import React from "react";
+import {db} from "../firebase";
+import { collection,addDoc,Timestamp } from "firebase/firestore";
 import { useState } from "react";
 export default function AjouteArtcle() {
   const [titre, setTitre] = useState();
@@ -10,12 +12,28 @@ export default function AjouteArtcle() {
   };
   const mdate = CurrentYear();
   //console.log(message);
+
+  const handleSubmit = async(e=>{
+    e.preventDefault();
+    try {
+      await addDoc(collection(db,articles),{
+        titre:titre,
+        article:article,
+        created :Timestamp.now(),
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.log(error);
+    }
+  })
+
+  /* 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const articles = { titre, article, mdate };
+    const articles = { titre, article, mdate }; */
   // console.log(articles);
 
-    axios
+ /*    axios
       .post("http://localhost:4000/article", articles)
       .then((response) => {
         console.log("axios response=>", response);
@@ -24,7 +42,7 @@ export default function AjouteArtcle() {
       .catch((error) => {
         console.log("axios error =>", error);
       });
-  };
+  }; */
 
   if (submitted) {
     return (
@@ -48,10 +66,9 @@ export default function AjouteArtcle() {
           />
         </div>
         <div>
-          <input
-            type="text"
+          <textarea
             name="article"
-            placeholder="article"
+            placeholder="votre article"
             required
             onChange={(e) => setArticle(e.target.value)}
           />
